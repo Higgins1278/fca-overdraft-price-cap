@@ -1,0 +1,21 @@
+
+Call:
+lm(formula = rate ~ post * treated, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.5386 -0.8192  0.0691  0.5454  4.5941 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   19.2867     0.1891 101.971  < 2e-16 ***
+post           1.7833     0.2860   6.237 1.34e-08 ***
+treated        0.3293     0.2675   1.231    0.221    
+post:treated  11.6093     0.4044  28.708  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9828 on 92 degrees of freedom
+Multiple R-squared:  0.9698,	Adjusted R-squared:  0.9689 
+F-statistic: 986.4 on 3 and 92 DF,  p-value: < 2.2e-16
+
